@@ -13,7 +13,7 @@
 	<!-- sans-serif -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800;900&display=swap"
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fredoka:wght@300;400;600;700&display=swap"
 		rel="stylesheet">
 	<!-- Font-awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -74,8 +74,8 @@
 				</section>
 			</header>
 			<!-- Section 1 -->
-			<section class="first-courses">
-				<div class="courses container d-flex">
+			<section class="section-courses">
+				<div class="courses container d-flex align-items-center">
 					<div class="text-side">
 						<img src="./img/books-icon.png" alt="icon books">
 						<h2>Thounsands of courses for any type of student</h2>
@@ -101,11 +101,66 @@
 						<img :src="'./img/' + facultie.img + '.png'" alt="Facultie icon">
 						<div>{{facultie.facultie}}</div>
 					</div>
-
-
 				</div>
+			</section>
+
+			<!-- Third Section -->
+			<section class="section-courses">
+				<div class="courses-law container d-flex align-items-center">
+					<div class="image-side">
+						<img src="./img/Gavel-Illustration-e1556884768193.png" alt="Illustration Law">
+					</div>
+					<div class="text-side">
+						<h2>Law Faculty</h2>
+						<p>Learning from world-leading academics and pratictioners, you'll not only receive an
+							outstanding grounding in the theory of law, but you will be able to understand how those
+							principles are applied in pratice trough a range of student-led activities and competitions.
+						</p>
+						<button class="courses-btn mt-4" type="button"> Read More</button>
+					</div>
+				</div>
+			</section>
+			<!-- Section diagram -->
+			<section class="university-year">
 
 			</section>
+			<div class="diagram d-flex flex-column align-items-center">
+				<img class="icon-edu" src="./img/Clock-and-Bell.png" alt="Year icon">
+				<h2>University Year</h2>
+				<div class="dates d-flex flex-column align-items-center">
+					<div class="key-times d-flex justify-content-end">
+						<div>
+							<h5>Demo Classes</h5>
+							<p>In the first week, students try to accommodate with the teaching style and choose their
+								optional courses.</p>
+						</div>
+						<div class="graduation-day">
+							<h5>Graduation Day</h5>
+							<p>In the first week, students try to accommodate with the teaching style and choose their
+								optional courses.</p>
+						</div>
+
+					</div>
+					<!-- Diagram -->
+					<img src="./img/Timeline-Item.png" alt="Year University Diagram">
+
+					<div class="key-times bottom-keys d-flex justify-content-start">
+						<div class="graduation-day">
+							<h5>Demo Classes</h5>
+							<p>In the first week, students try to accommodate with the teaching style and choose their
+								optional courses.</p>
+						</div>
+						<div>
+							<h5>Graduation Day</h5>
+							<p>In the first week, students try to accommodate with the teaching style and choose their
+								optional courses.</p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
 
 
 		</div>

@@ -69,17 +69,17 @@ const app = Vue.createApp({
                 {
                     event: "Coaching Sessions",
                     date: "20 May 23:30 PM",
-                    program: "Loremipsum"
+                    program: "Lorem ipsum facilis optio perspiciatis unde suscipit corrupti."
                 },
                 {
                     event: "Coaching Sessions",
                     date: "24 Mar 18:00 PM",
-                    program: "Loremipsum"
+                    program: "Lorem ipsum facilis optio perspiciatis unde suscipit corrupti."
                 },
                 {
                     event: "Coaching Sessions",
                     date: "12 Feb 13:30 PM",
-                    program: "Loremipsum"
+                    program: "Lorem ipsum facilis optio perspiciatis unde suscipit corrupti."
                 },
 
             ]

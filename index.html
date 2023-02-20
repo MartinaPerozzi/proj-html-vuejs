@@ -178,8 +178,26 @@
 							</ul>
 						</div>
 						<button class="courses-btn mt-5" type="button">View All Events</button>
-
 					</section>
+				</section>
+
+				<!-- New section Latest Courses -->
+				<section class="events d-flex flex-column align-items-center mt-5">
+					<img class="icon-edu" src="./img/upcoming-events-calendar-icon.png" alt="Year icon">
+					<h2>Upcoming Events</h2>
+					<div class="d-flex">
+						<ul class="event-list d-flex">
+							<li v-for="(event, index) in events">
+								<div class="card card-events p-5">
+									<h4>{{event.event}}</h4>
+									<span> <i class="fa-regular fa-calendar-days pe-2"></i>{{event.date}}</span>
+									<p>{{event.program}}</p>
+									<button class="courses-btn" type="button">+ Find More</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<button class="courses-btn mt-5" type="button">View All Events</button>
 				</section>
 
 

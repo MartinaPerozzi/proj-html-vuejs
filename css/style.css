@@ -224,7 +224,7 @@ h3 {
     position: relative;
     width: 99vw;
     margin-top: 9rem;
-    height: 1500px;
+    height: 1600px;
 }
 
 .university-year::before {
@@ -244,7 +244,7 @@ h3 {
     content: "";
     background-image: url(../svg/svg-1.svg);
     position: absolute;
-    top: 1420px;
+    top: 1447px;
     right: 0px;
     bottom: 0px;
     left: 0px;
@@ -322,8 +322,8 @@ h3 {
 
 .event-list button {
     position: absolute;
-    top: 170px;
-    left: 85px;
+    top: 195px;
+    left: 120px;
     background-color: var(--red-bg);
     box-shadow:
         5.2px 3.1px 1.1px rgba(0, 0, 0, 0.011),
@@ -333,11 +333,17 @@ h3 {
         17px 10px 33px rgba(0, 0, 0, 0.04);
 }
 
-.card-event {
+.card-events {
     box-shadow:
         5.2px 3.1px 1.1px rgba(0, 0, 0, 0.011),
         7.8px 4.6px 2.9px rgba(0, 0, 0, 0.014),
         8.9px 5.2px 5.8px rgba(0, 0, 0, 0.017),
         10.1px 5.9px 12px rgba(0, 0, 0, 0.024),
         17px 10px 33px rgba(0, 0, 0, 0.04);
+    width: 400px;
+    border-radius: 1rem;
+}
+
+.card-event p {
+    text-overflow: ellipsis
 }

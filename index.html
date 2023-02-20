@@ -59,21 +59,53 @@
 						<h1>Key to your success</h1>
 						<p>EduPrime is the most versatile WordPress Theme for educational purposes, showcasing
 							universities, secondary schools etc.</p>
+						<div class="fast-icons d-flex flex-column">
+							<i class="fa-solid fa-cart-shopping"></i>
+							<i class="fa-solid fa-book-open"></i>
+							<i class="fa-regular fa-circle"></i>
+						</div>
 						<div class="jumbotron-btn d-flex pt-4">
 							<button class="courses-btn" type="button"><i class="fa-solid fa-magnifying-glass"></i>
 								Search courses</button>
 							<button class="edu-btn btn-white-edu" type="button"><i class="fa-solid fa-user-plus"></i>
 								Apply for university</button>
-
 						</div>
+					</div>
+				</section>
+			</header>
+			<!-- Section 1 -->
+			<section class="first-courses">
+				<div class="courses container d-flex">
+					<div class="text-side">
+						<img src="./img/books-icon.png" alt="icon books">
+						<h2>Thounsands of courses for any type of student</h2>
+						<p>At EduPrime, it doesn't matter what domain you wish to pursue a career in. Here you can find
+							a course that satisfies your needs within a click away and applies for a course in a matter
+							of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the
+							number of courses it provides.</p>
+						<button class="courses-btn mt-4" type="button"> Browse through courses</button>
+					</div>
+					<div class="image-side">
+						<img src="./img/Graduation-Illustration.png" alt="Illustration graduation">
+					</div>
+				</div>
+			</section>
 
+			<!-- Second sectiom -->
+			<section class="faculties-title d-flex flex-column justify-content-center align-items-center">
+				<h3>Faculties avilable at EduPrime</h3>
+				<p>A single university with a load of courses, tailored to satisfy any student's needs.</p>
+
+				<div class="faculties-row d-flex justify-content-center mt-3">
+					<div class="facultie" v-for="facultie, index in faculties">
+						<img :src="'./img/' + facultie.img + '.png'" alt="Facultie icon">
+						<div>{{facultie.facultie}}</div>
 					</div>
 
 
+				</div>
 
-				</section>
-
-			</header>
+			</section>
 
 
 		</div>

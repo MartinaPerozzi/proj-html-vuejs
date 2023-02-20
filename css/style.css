@@ -7,7 +7,7 @@ header {
 header {
     position: relative;
     width: 100vw;
-    height: 500px;
+    height: 700px;
 }
 
 header::before {
@@ -21,7 +21,19 @@ header::before {
     opacity: 0.1;
     filter: blur;
     background-size: cover;
+}
 
+header::after {
+    content: "";
+    background-image: url(../img/Wave-1.png);
+    position: absolute;
+    top: 580px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+    filter: blur;
+    background-size: cover;
 }
 
 .navbar-edu {
@@ -64,6 +76,26 @@ header li {
 }
 
 /* JUMBOTRON */
+.jumbotron-edu {
+    position: relative;
+    gap: 1rem;
+}
+
+.fast-icons {
+    position: absolute;
+    left: 0px;
+    background-color: var(--yellow-bg);
+    padding: 0rem 0.8rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow:
+        0.9px 0px 4px rgba(0, 0, 0, 0.045),
+        7px 0px 32px rgba(0, 0, 0, 0.09);
+}
+
+.fast-icons>* {
+    padding: 1rem 0rem;
+}
 
 .jumbotron-content {
     width: 35%;
@@ -99,4 +131,76 @@ header li {
 .btn-white-edu {
     background-color: var(--white-bg);
     color: var(--red-bg);
+}
+
+/* First Section */
+
+.first-courses {
+    background-image: url(../img/home-background.png);
+    color: var(--petrol-grey-bg);
+    background-position: left;
+    padding-bottom: 3rem;
+}
+
+.courses {
+    gap: 4rem;
+}
+
+.first-courses .text-side>img {
+    max-width: 60px;
+}
+
+.first-courses h2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    padding: 0.8rem 0rem 2rem 0rem;
+    line-height: 3.5rem;
+}
+
+.first-courses .text-side {
+    flex-basis: 50%;
+}
+
+.image-side {
+    flex-basis: 40%;
+}
+
+/* Second Section */
+.faculties-row {
+    box-shadow:
+        5.2px 3.1px 1.1px rgba(0, 0, 0, 0.011),
+        7.8px 4.6px 2.9px rgba(0, 0, 0, 0.014),
+        8.9px 5.2px 5.8px rgba(0, 0, 0, 0.017),
+        10.1px 5.9px 12px rgba(0, 0, 0, 0.024),
+        17px 10px 33px rgba(0, 0, 0, 0.04);
+    width: 100%;
+}
+
+.facultie img {
+    max-width: 130px;
+}
+
+.facultie {
+    border: 1px solid var(--light-grey-border);
+    padding: 2rem 4rem;
+}
+
+.faculties-title {
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 4rem;
+    color: var(petrol-grey-bg);
+    line-height: 2rem;
+}
+
+.faculties-title p {
+    width: 22%;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 900;
 }

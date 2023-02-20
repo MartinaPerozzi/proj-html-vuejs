@@ -42,6 +42,30 @@ const app = Vue.createApp({
 
             },
 
+            faculties: [
+                {
+                    img: "Gavel-v2",
+                    facultie: "Law Faculty",
+                },
+                {
+                    img: "Coins-tabs-v2",
+                    facultie: "Economy",
+                },
+                {
+                    img: "Medicine-tabs-v2",
+                    facultie: "Medicine",
+                },
+                {
+                    img: "Computer-tabs-v2",
+                    facultie: "Computer Science",
+                },
+                {
+                    img: "Palette-tabs-v2",
+                    facultie: "Graphic Design",
+                }
+
+            ]
+
         }
     },
 

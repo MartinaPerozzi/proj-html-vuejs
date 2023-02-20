@@ -223,19 +223,34 @@ h3 {
 .university-year {
     position: relative;
     width: 99vw;
-    height: 200px;
+    margin-top: 9rem;
+    height: 1500px;
 }
 
 .university-year::before {
     content: "";
     background-image: url(../svg/svg-0.svg);
     position: absolute;
-    top: 0px;
+    top: -106px;
     right: 0px;
     bottom: 0px;
     left: 0px;
     opacity: 1;
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.university-year::after {
+    content: "";
+    background-image: url(../svg/svg-1.svg);
+    position: absolute;
+    top: 1420px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .diagram img {
@@ -244,19 +259,19 @@ h3 {
 }
 
 .diagram {
-    background-color: var(--red-bg);
     padding: 2rem 7rem 7rem 7rem;
     color: var(--white-bg);
+    background-color: var(--red-bg);
 }
 
-.diagram h2 {
+.diagram>h2 {
     padding: 0px;
     margin-bottom: 5rem;
     position: relative;
     color: var(--white-bg);
 }
 
-.diagram h2::before {
+.diagram>h2::before {
     content: "";
     width: 315px;
     height: 60px;
@@ -287,4 +302,42 @@ h3 {
 .bottom-keys .graduation-day {
     margin-right: 0rem;
     margin-left: 5rem;
+}
+
+/* EVENTS */
+.events {
+    color: var(--medium-petrol-grey-text);
+    text-align: center;
+}
+
+.events h2 {
+    color: var(--white-bg);
+    padding-bottom: 3rem;
+}
+
+.event-list {
+    gap: 2rem;
+    position: relative;
+}
+
+.event-list button {
+    position: absolute;
+    top: 170px;
+    left: 85px;
+    background-color: var(--red-bg);
+    box-shadow:
+        5.2px 3.1px 1.1px rgba(0, 0, 0, 0.011),
+        7.8px 4.6px 2.9px rgba(0, 0, 0, 0.014),
+        8.9px 5.2px 5.8px rgba(0, 0, 0, 0.017),
+        10.1px 5.9px 12px rgba(0, 0, 0, 0.024),
+        17px 10px 33px rgba(0, 0, 0, 0.04);
+}
+
+.card-event {
+    box-shadow:
+        5.2px 3.1px 1.1px rgba(0, 0, 0, 0.011),
+        7.8px 4.6px 2.9px rgba(0, 0, 0, 0.014),
+        8.9px 5.2px 5.8px rgba(0, 0, 0, 0.017),
+        10.1px 5.9px 12px rgba(0, 0, 0, 0.024),
+        17px 10px 33px rgba(0, 0, 0, 0.04);
 }

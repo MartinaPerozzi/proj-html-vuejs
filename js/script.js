@@ -64,6 +64,24 @@ const app = Vue.createApp({
                     facultie: "Graphic Design",
                 }
 
+            ],
+            events: [
+                {
+                    event: "Coaching Sessions",
+                    date: "20 May 23:30 PM",
+                    program: "Loremipsum"
+                },
+                {
+                    event: "Coaching Sessions",
+                    date: "24 Mar 18:00 PM",
+                    program: "Loremipsum"
+                },
+                {
+                    event: "Coaching Sessions",
+                    date: "12 Feb 13:30 PM",
+                    program: "Loremipsum"
+                },
+
             ]
 
         }

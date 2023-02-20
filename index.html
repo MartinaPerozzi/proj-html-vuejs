@@ -48,7 +48,7 @@
 						<li v-for="(item, index) in headerNavbar.navItems" :class="(item.dropdown)? 'dropdown': ''">
 							{{item.nav}}
 							<div v-if="index==lastNavLink">
-								<button class="courses-btn" type:button> VIEW COURSES</button>
+								<button class="courses-btn" type:button> {{item.buttonText}}</button>
 							</div>
 						</li>
 					</ul>

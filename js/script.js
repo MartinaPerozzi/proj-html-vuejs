@@ -35,12 +35,10 @@ const app = Vue.createApp({
                     },
                     {
                         nav: "",
+                        buttonText: "VIEW COURSES",
                         dropdown: false,
                     },
                 ],
-
-                activeItem: 0,
-
 
             },
 
@@ -48,7 +46,7 @@ const app = Vue.createApp({
     },
 
     computed: {
-        lastNavLink(index) {
+        lastNavLink() {
             let lastItem = this.headerNavbar.navItems.length - 1;
             console.log(lastItem);
             return lastItem;

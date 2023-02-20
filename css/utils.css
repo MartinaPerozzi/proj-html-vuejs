@@ -1,0 +1,42 @@
+/* Utils */
+:root {
+	/* Background Colors */
+	--hard-white-bg: #FFFFFF80;
+	--medium-white-bg: #FAFAFA;
+	--light-white-bg: #F7F8FA;
+	--light-red-bg: #DA5F60E6;
+	--hard-grey-bg: #000000CC;
+	/* Text & Background */
+	--white-bg: #FFFFFF;
+	--yellow-bg: #E9D758;
+	--red-bg: #E56768;
+	--grey-bg: #454545;
+	--petrol-grey-bg: #3D404F;
+	--black-bg: #000000;
+	/* Text color */
+	--light-white-txt: #FFFFFFCC;
+	--green-txt: #79B530;
+	--grey-txt: #8B8B8A;
+	--medium-grey-txt: #7F7F7F;
+	--hard-grey-txt: #74777B;
+	--petrol-grey-txt: #70727E;
+	--medium-petrol-grey-text: #5C5E6C;
+	--hard-petrol-grey: #434959;
+	--brown-txt: #3F3F3F;
+	--harder-petrol-grey: #223441;
+	--medium-brown-txt: #252525;
+	--hard-brown-txt: #151515;
+	/* Fill colors - white-bg / red-bg/ black-bg*/
+	--medium-green-fill: #82B541;
+	--light-green-fill: #69DE89;
+	/* Border colors- white-bg/ red-bg/ yellow-bg/ green-text/ black-bg */
+	--grey-border: #ECECEE;
+	--light-petrol-border: #E5ECEF;
+	--light-grey-border: #EAEAEA;
+	--hard-grey-border: #CCCCCC;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}

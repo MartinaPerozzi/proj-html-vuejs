@@ -66,6 +66,10 @@ ul {
 	list-style: none;
 }
 
+li {
+	cursor: pointer;
+}
+
 /* Titles */
 h5 {
 	font-size: 1.1rem;

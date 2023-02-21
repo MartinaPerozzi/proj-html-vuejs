@@ -393,10 +393,6 @@ h2 {
 }
 
 /* Latest courses */
-.latest-courses {
-    padding: 0rem 4rem;
-}
-
 .latest-courses-row {
     width: 100%;
 }
@@ -422,7 +418,11 @@ h2 {
     padding: 1rem 1.5rem;
 }
 
-/* Examination */
+.latest-courses-row {
+    gap: 1rem;
+}
+
+/* Examination *****************************/
 .examination {
     margin-top: 7rem;
 }
@@ -431,7 +431,7 @@ h2 {
     background-color: var(--red-bg);
 }
 
-/* Subscribe Section */
+/* Subscribe Section ***********************/
 .subscrive h3 {
     color: var(--light-white-bg);
 }

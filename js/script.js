@@ -82,7 +82,129 @@ const app = Vue.createApp({
                     program: "Lorem ipsum facilis optio perspiciatis unde suscipit corrupti."
                 },
 
-            ]
+            ],
+            latestCourses: [
+                {
+                    logo: "Decisions-icon",
+                    course: "Make Better Decisions",
+                    teacher: "Teacher: James Collins",
+                    price: "$21.00"
+                },
+                {
+                    logo: "Speaker-icon",
+                    course: "How to be a speaker",
+                    teacher: "Teacher: James Collins",
+                    price: "Free"
+                },
+                {
+                    logo: "Network-icon",
+                    course: "Network Introduction",
+                    teacher: "Teacher: James Collins",
+                    price: "Free"
+                },
+                {
+                    logo: "Brand-icon",
+                    course: "Brand Management",
+                    teacher: "Teacher: James Collins",
+                    price: "Free"
+                },
+
+            ],
+
+            footerNav: {
+                logo: "theme_eduprime_logo",
+                text: "EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses, secondary schools etc.",
+                buttons: [
+                    {
+                        imgBtn: "svg-2.svg",
+                        textBtn: "Purchase Theme"
+                    },
+                    {
+                        imgBtn: "svg-3.svg",
+                        textBtn: "Related Themes"
+                    }
+                ],
+
+                socialMedias: [
+                    {
+                        facebook: "",
+                    },
+                    {
+                        twitter: "",
+                    },
+                    {
+                        instagram: "",
+                    },
+                ],
+
+                navItemsGetEdu: [
+                    {
+                        link: "Request a website",
+                    },
+                    {
+                        link: "Browse Themes",
+                    },
+                    {
+                        link: "Payment options",
+                    },
+                    {
+                        link: "Support System",
+                    },
+                    {
+                        link: "Checkout",
+                    },
+                    {
+                        link: "Purchase Theme",
+                    },
+                ],
+
+                navItemsNetworking: [
+                    {
+                        link: "Purchase Theme",
+                    },
+                    {
+                        link: "Our Benefits",
+                    },
+                    {
+                        link: "Our Team",
+                    },
+                    {
+                        link: "Our Services",
+                    },
+                    {
+                        link: "Other Products",
+                    },
+                    {
+                        link: "My account",
+                    },
+                ],
+
+                categories: [
+                    {
+                        categorie: "ECONOMY",
+                    },
+                    {
+                        categorie: "DESIGN",
+                    },
+                    {
+                        categorie: "COACHING",
+                    },
+                    {
+                        categorie: "BUSINESS",
+                    },
+                    {
+                        categorie: "MEDICINE",
+                    },
+                    {
+                        categorie: "LAW",
+                    },
+                    {
+                        categorie: "FITNESS",
+                    },
+                ],
+
+                search: "",
+            }
 
         }
     },

@@ -13,7 +13,8 @@
 	<!-- sans-serif -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fredoka:wght@300;400;600;700&display=swap"
+	<link
+		href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fredoka:wght@300;400;500;600;700&display=swap"
 		rel="stylesheet">
 	<!-- Font-awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -40,7 +41,7 @@
 			<!-- HEADER -->
 			<!-- Navbar -->
 			<header>
-				<div class="navbar-edu d-flex justify-content-between align-items-center">
+				<div class="navbar-edu d-flex justify-content-between align-items-center pt-5">
 					<div class="logo-img">
 						<img :src="'./img/' + headerNavbar.logo + '.png'" alt="logo image">
 					</div>
@@ -65,14 +66,16 @@
 							<i class="fa-regular fa-circle"></i>
 						</div>
 						<div class="jumbotron-btn d-flex pt-4">
-							<button class="courses-btn" type="button"><i class="fa-solid fa-magnifying-glass"></i>
+							<button class="courses-btn" type="button"><i class="fa-solid fa-magnifying-glass pe-2"></i>
 								Search courses</button>
-							<button class="edu-btn btn-white-edu" type="button"><i class="fa-solid fa-user-plus"></i>
+							<button class="edu-btn btn-white-edu" type="button"><i
+									class="fa-solid fa-user-plus pe-2"></i>
 								Apply for university</button>
 						</div>
 					</div>
 				</section>
 			</header>
+
 			<!-- Section 1 -->
 			<section class="section-courses">
 				<div class="courses container d-flex align-items-center">
@@ -93,7 +96,7 @@
 
 			<!-- Second sectiom -->
 			<section class="faculties-title d-flex flex-column justify-content-center align-items-center">
-				<h3>Faculties avilable at EduPrime</h3>
+				<h2>Faculties available at EduPrime</h2>
 				<p>A single university with a load of courses, tailored to satisfy any student's needs.</p>
 
 				<div class="faculties-row d-flex justify-content-center mt-3">
@@ -111,7 +114,7 @@
 						<img src="./img/Gavel-Illustration-e1556884768193.png" alt="Illustration Law">
 					</div>
 					<div class="text-side">
-						<h2>Law Faculty</h2>
+						<h3>Law Faculty</h3>
 						<p>Learning from world-leading academics and pratictioners, you'll not only receive an
 							outstanding grounding in the theory of law, but you will be able to understand how those
 							principles are applied in pratice trough a range of student-led activities and competitions.
@@ -134,7 +137,7 @@
 									their
 									optional courses.</p>
 							</div>
-							<div class="graduation-day">
+							<div class="box-day">
 								<h5>Graduation Day</h5>
 								<p>In the first week, students try to accommodate with the teaching style and choose
 									their
@@ -146,17 +149,15 @@
 						<img src="./img/Timeline-Item.png" alt="Year University Diagram">
 
 						<div class="key-times bottom-keys d-flex justify-content-start">
-							<div class="graduation-day">
-								<h5>Demo Classes</h5>
-								<p>In the first week, students try to accommodate with the teaching style and choose
-									their
-									optional courses.</p>
+							<div class="box-day">
+								<h5>Orientation</h5>
+								<p>First day of the university year, all students gather for the opening ceremony and
+									then network with others.</p>
 							</div>
 							<div>
-								<h5>Graduation Day</h5>
-								<p>In the first week, students try to accommodate with the teaching style and choose
-									their
-									optional courses.</p>
+								<h5>Evaluation</h5>
+								<p>At the end of a semester, students take a general evaluation test for every subject
+									they're learning.</p>
 							</div>
 
 						</div>
@@ -165,7 +166,7 @@
 					<section class="events d-flex flex-column align-items-center mt-5">
 						<img class="icon-edu" src="./img/upcoming-events-calendar-icon.png" alt="Year icon">
 						<h2>Upcoming Events</h2>
-						<div class="d-flex">
+						<div class="d-flex mb-5">
 							<ul class="event-list d-flex">
 								<li v-for="(event, index) in events">
 									<div class="card card-events p-5">
@@ -180,31 +181,128 @@
 						<button class="courses-btn mt-5" type="button">View All Events</button>
 					</section>
 				</section>
-
-				<!-- New section Latest Courses -->
-				<section class="events d-flex flex-column align-items-center mt-5">
-					<img class="icon-edu" src="./img/upcoming-events-calendar-icon.png" alt="Year icon">
-					<h2>Upcoming Events</h2>
-					<div class="d-flex">
-						<ul class="event-list d-flex">
-							<li v-for="(event, index) in events">
-								<div class="card card-events p-5">
-									<h4>{{event.event}}</h4>
-									<span> <i class="fa-regular fa-calendar-days pe-2"></i>{{event.date}}</span>
-									<p>{{event.program}}</p>
-									<button class="courses-btn" type="button">+ Find More</button>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<button class="courses-btn mt-5" type="button">View All Events</button>
-				</section>
-
-
-
-
-
 			</div>
+
+			<!-- New section Latest Courses -->
+			<section class="d-flex flex-column align-items-center">
+				<h2 class="align-self-start">Latest Courses</h2>
+				<div class="d-flex">
+					<ul class="event-list d-flex">
+						<li v-for="(course, index) in latestCourses">
+							<div class="card card-latest-courses d-flex flex-column align-items-center p-5">
+								<img :src="'./img/'+ course.logo + '.png'" alt="Latest Courses Logos">
+								<h4> {{course.course}}</h4>
+								<span> <i class="fa-regular fa-calendar-days pe-2"></i> {{course.teacher}}</span>
+								<p>{{course.price}}</p>
+								<button class="courses-btn" type="button">+ View Courses</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Sections illustration/text -->
+			<section class="section-courses examination">
+				<div class="courses container d-flex align-items-center">
+					<div class="text-side">
+						<img src="./img/Exam-icon.png" alt="icon books">
+						<h2>The most efficent examination method</h2>
+						<p>At EduPrime, it doesn't matter what domain you wish to pursue a career in. Here you can find
+							a course that satisfies your needs within a click away and applies for a course in a matter
+							of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the
+							number of courses it provides.</p>
+						<button class="courses-btn mt-4" type="button"> Discorver the method</button>
+					</div>
+					<div class="image-side">
+						<img src="./img/Exam-Illustration.png" alt="Illustration graduation">
+					</div>
+				</div>
+			</section>
+
+			<section class="section-courses examination">
+				<div class="courses container d-flex align-items-center">
+					<div class="image-side">
+						<img src="./img/Girl-Illustration.png" alt="Illustration graduation">
+					</div>
+					<div class="text-side">
+						<img src="./img/Exam-icon-1.png" alt="icon books">
+						<h2>Variable fees for international students</h2>
+						<p>At EduPrime, it doesn't matter what domain you wish to pursue a career in. Here you can find
+							a course that satisfies your needs within a click away and applies for a course in a matter
+							of minutes. EduPrime is ranked as the most versatile university in the world, thanks to the
+							number of courses it provides.</p>
+						<button class="courses-btn mt-4" type="button"> List of Fees</button>
+					</div>
+				</div>
+			</section>
+
+
+
+			<!-- FOOTER -->
+			<footer>
+				<div class="footer-nav d-flex">
+					<!-- Buttons left side -->
+					<div class="buttons-footer d-flex flex-column">
+						<button type="button" v-for="button, index in footerNav.buttons">
+							<img :src="'./svg/' + button.imgBtn" alt="Button-icon">
+							<span>{{button.textBtn}}</span>
+						</button>
+					</div>
+					<!-- Logo and text -->
+					<div class="left-footer-side logo-img">
+						<img :src="'./img/' + footerNav.logo + '.png'" alt="">
+						<p>{{footerNav.text}}</p>
+						<div>
+
+						</div>
+					</div>
+					<!-- Nav links -->
+					<div class="nav-link d-flex">
+						<div>
+							<ul>
+								<li>
+									<h4>Get EduPrime</h4>
+								</li>
+								<li v-for="item, index in footerNav.navItemsGetEdu">
+									{{item.link}}
+								</li>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li>
+									<h4>Networking</h4>
+								</li>
+								<li v-for="item, index in footerNav.navItemsNetworking">
+									{{item.link}}
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Search -->
+					<div class="search-input">
+						<input type="search" v-modal="footerNav.search" placeholder="Search...">
+						<div class="circle-icon d-flex"><i class="fa-solid fa-magnifying-glass"></i></div>
+						<h5>Search categories</h5>
+						<div v-for="categorie, index  in footerNav.categories">
+							<span>{{categorie.categorie}}</span>
+
+						</div>
+					</div>
+
+
+
+				</div>
+
+			</footer>
+
+
+
+
+
+
+
+
 		</div>
 
 

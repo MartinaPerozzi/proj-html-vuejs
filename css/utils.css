@@ -75,3 +75,19 @@ h5 {
 	font-size: 1.1rem;
 	padding-bottom: 1rem;
 }
+
+h4 {
+	font-size: 1.3rem;
+	padding-bottom: 1rem;
+	font-weight: 600;
+}
+
+strong {
+	font-weight: 600;
+	color: var(--petrol-grey-txt);
+}
+
+input:focus {
+	border: none;
+	outline: none;
+}

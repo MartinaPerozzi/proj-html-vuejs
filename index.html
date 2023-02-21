@@ -77,7 +77,7 @@
 			</header>
 
 			<!-- Section 1 -->
-			<section class="section-courses">
+			<section class="section-courses first">
 				<div class="courses container-edu d-flex align-items-center">
 					<div class="text-side">
 						<img src="./img/books-icon.png" alt="icon books">
@@ -199,8 +199,10 @@
 						<div class="card card-latest-courses d-flex flex-column align-items-center">
 							<img :src="'./img/'+ course.logo + '.png'" alt="Latest Courses Logos">
 							<h4> {{course.course}}</h4>
-							<span> <i class="fa-regular fa-user pe-2"></i> {{course.teacher}}</span>
-							<p>{{course.price}}</p>
+							<span> <i class="fa-regular fa-user pe-2"></i> Teacher:
+								<strong>{{course.teacher}}</strong></span>
+							<p><i class="fa-regular fa-money-bill-1 pe-2"></i> Price: <strong>{{course.price}}</strong>
+							</p>
 							<button class="courses-btn" type="button"> <i class="fa-solid fa-eye pe-2"></i> View
 								Courses</button>
 						</div>
@@ -245,7 +247,7 @@
 			</section>
 
 			<!-- Subscribe -->
-			<section class="subscrive d-flex align-items-center justify-content-center mt-5">
+			<section class="subscrive d-flex align-items-center justify-content-center">
 				<h3>Subscrive Now to Our Newsletter!</h3>
 				<div class="input-email">
 					<input type="email" v-model="search" placeholder="Email address...">

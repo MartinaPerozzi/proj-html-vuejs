@@ -48,7 +48,7 @@ header ul {
 }
 
 header li {
-    padding-right: 2rem;
+    padding-right: 2.3rem;
     position: relative;
     font-family: 'Fredoka', sans-serif;
     font-size: 1.1rem;
@@ -144,7 +144,7 @@ button {
 
 
 /* First Section ***********************************/
-.section-courses {
+.section-courses .first {
     background-image: url(../img/home-background.png);
     color: var(--petrol-grey-bg);
     background-position: right;
@@ -238,7 +238,7 @@ h2 {
 }
 
 .faculties-title p {
-    width: 22%;
+    width: 24%;
     text-align: center;
     color: var(--medium-petrol-grey-text);
 }
@@ -306,6 +306,7 @@ h2 {
     background-repeat: no-repeat;
 }
 
+/* DIAGRAM **************************************** */
 .key-times p {
     font-size: 1.1rem;
     margin-top: 1.5rem;
@@ -347,11 +348,11 @@ h2 {
 }
 
 .key-times {
-    gap: 8rem;
+    gap: 6rem;
 }
 
 .key-times div {
-    flex-basis: 30%;
+    flex-basis: 33%;
     align-items: flex-end;
     text-align: center;
 }
@@ -360,9 +361,17 @@ h2 {
     margin-right: 6rem;
 }
 
-.bottom-keys .graduation-day {
+.bottom-keys .box-day {
     margin-right: 0rem;
-    margin-left: 5rem;
+    margin-left: 3rem;
+}
+
+.bottom-keys {
+    gap: 6rem;
+}
+
+.key-times h5 {
+    padding-bottom: 0;
 }
 
 /* EVENTS ***********************************/
@@ -434,7 +443,7 @@ h2 {
 
 /* Examination *****************************/
 .examination {
-    margin-top: 7rem;
+    margin-top: 9rem;
 }
 
 .examination .courses-btn {
@@ -451,6 +460,7 @@ h2 {
     padding: 2rem 5rem;
     width: 100%;
     gap: 7rem;
+    margin-top: 6rem;
 }
 
 .input-email {
@@ -473,7 +483,7 @@ h2 {
 /* PARTNER Section **************************/
 .partner {
     background-image: url(../img/background-wave3.png);
-    background-position-y: -320%;
+    background-position-y: -310%;
 }
 
 .partner-container {

@@ -87,25 +87,25 @@ const app = Vue.createApp({
                 {
                     logo: "Decisions-icon",
                     course: "Make Better Decisions",
-                    teacher: "Teacher: James Collins",
+                    teacher: "James Collins",
                     price: "$21.00"
                 },
                 {
                     logo: "Speaker-icon",
                     course: "How to be a speaker",
-                    teacher: "Teacher: James Collins",
+                    teacher: "James Collins",
                     price: "Free"
                 },
                 {
                     logo: "Network-icon",
                     course: "Network Introduction",
-                    teacher: "Teacher: James Collins",
+                    teacher: "James Collins",
                     price: "Free"
                 },
                 {
                     logo: "Brand-icon",
                     course: "Brand Management",
-                    teacher: "Teacher: James Collins",
+                    teacher: "James Collins",
                     price: "Free"
                 },
 
@@ -135,8 +135,6 @@ const app = Vue.createApp({
                 {
                     partner: "partner-7",
                 },
-
-
             ],
 
             footerNav: {
@@ -155,13 +153,13 @@ const app = Vue.createApp({
 
                 socialMedias: [
                     {
-                        facebook: "",
+                        social: "fa-brands fa-facebook-f",
                     },
                     {
-                        twitter: "",
+                        social: "fa-brands fa-twitter",
                     },
                     {
-                        instagram: "",
+                        social: "fa-brands fa-square-instagram",
                     },
                 ],
 

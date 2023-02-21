@@ -144,7 +144,7 @@ button {
 
 
 /* First Section ***********************************/
-.section-courses .first {
+.section-courses.first {
     background-image: url(../img/home-background.png);
     color: var(--petrol-grey-bg);
     background-position: right;
@@ -275,6 +275,7 @@ h2 {
     width: 99vw;
     margin-top: 9rem;
     height: 1782px;
+    min-width: 1200px;
 }
 
 
@@ -284,7 +285,7 @@ h2 {
     content: "";
     background-image: url(../svg/svg-0.svg);
     position: absolute;
-    top: -90px;
+    top: -75px;
     right: 0px;
     bottom: 0px;
     left: 0px;
@@ -304,6 +305,7 @@ h2 {
     opacity: 1;
     background-size: 100%;
     background-repeat: no-repeat;
+    height: 100px;
 }
 
 /* DIAGRAM **************************************** */
@@ -385,6 +387,11 @@ h2 {
     padding-bottom: 4rem;
 }
 
+.card-events>h3 {
+    font-weight: 600;
+    color: var(--petrol-grey-bg);
+}
+
 .event-list {
     gap: 2rem;
     position: relative;
@@ -402,7 +409,7 @@ h2 {
     box-shadow: var(--box-shadow);
     border-radius: 1rem;
     background-color: var(--light-white-bg);
-    color: var(--petrol-grey-bg);
+    color: var(--light-grey-txt);
     text-align: center;
     min-width: 300px;
 }
@@ -453,11 +460,13 @@ h2 {
 /* Subscribe Section ***********************/
 .subscrive h3 {
     color: var(--light-white-bg);
+    font-weight: 500;
+    font-size: 2rem;
 }
 
 .subscrive {
     background-color: var(--red-bg);
-    padding: 2rem 5rem;
+    padding: 3rem 5rem;
     width: 100%;
     gap: 7rem;
     margin-top: 6rem;
@@ -481,19 +490,21 @@ h2 {
 }
 
 /* PARTNER Section **************************/
-.partner {
+/* .partner {
     background-image: url(../img/background-wave3.png);
     background-position-y: -310%;
-}
+} */
+
+
 
 .partner-container {
-    background-color: var(--light-white-bg);
-    background: linear-gradient(180deg, var(--white-bg) 60%, var(--light-white-bg) 15%);
+    background: linear-gradient(180deg, var(--white-bg) 70%, var(--light-white-bg) 15%);
 }
 
 .partner-logos {
     gap: 2rem;
     padding: 1rem 6rem 7rem 6rem;
+    background-image: url(../img/background-wave3.png);
 }
 
 .partner-logos img {
@@ -513,13 +524,18 @@ h2 {
 /* FOOTER *********************************/
 footer {
     background-color: var(--red-bg);
-    padding: 6rem 3rem;
     color: var(--light-white-txt);
+}
+
+.footer-main {
+    padding: 6rem 3rem;
+
 }
 
 .buttons-footer {
     gap: 1rem;
-    flex-basis: 15%;
+    flex-basis: 25%;
+    padding: 3rem 1rem;
 }
 
 .buttons-footer button {
@@ -529,6 +545,9 @@ footer {
     font-weight: 300;
     color: var(--light-white-txt);
     padding: 0.5rem 1rem;
+    box-shadow: 5.3px 2.6px 14.3px rgba(0, 0, 0, 0.51),
+        14px 7px 56px rgba(0, 0, 0, 0.151);
+
 }
 
 .buttons-footer img {
@@ -547,10 +566,28 @@ footer {
     font-size: 1rem;
 }
 
+/* Social MEDIA */
+.circle {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid var(--yellow-bg);
+}
+
+.circle i {
+    font-size: 1.5rem;
+}
+
+.social-icons {
+    gap: 1rem;
+
+}
+
 /* NAV LINKS */
 .nav-link {
     gap: 1rem;
     padding-right: 1rem;
+    flex-basis: 40%;
 }
 
 .nav-link ul {
@@ -570,10 +607,11 @@ footer input {
     padding: 1.2rem;
     min-width: 250px;
     width: 100%;
+    max-width: 400px;
 }
 
 .search {
-    flex-basis: 30%;
+    flex-basis: 40%;
     padding-left: 2rem;
     text-align: right;
 }
@@ -594,7 +632,7 @@ footer input {
     clip-path: circle(50% at 50% 50%);
     position: absolute;
     top: 0px;
-    left: 85%;
+    left: 87%;
     color: var(--white-bg);
 }
 

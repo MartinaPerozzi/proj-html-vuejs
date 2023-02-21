@@ -131,10 +131,10 @@
 				</div>
 			</section>
 
-			<!-- Section diagram -->
+			<!-- Section diagram / Events -->
 			<div class="university-year">
 				<section class="diagram d-flex flex-column align-items-center">
-					<img class="icon-edu" src="./img/Clock-and-Bell.png" alt="Year icon">
+					<img class="icon-edu pt-5" src="./img/Clock-and-Bell.png" alt="Year icon">
 					<h2>University Year</h2>
 					<div class=" dates d-flex flex-column align-items-center">
 						<div class="key-times d-flex justify-content-end">
@@ -177,8 +177,9 @@
 							<ul class="event-list d-flex">
 								<li v-for="(event, index) in events">
 									<div class="card card-events p-5">
-										<h4>{{event.event}}</h4>
-										<span> <i class="fa-regular fa-calendar-days pe-2"></i>{{event.date}}</span>
+										<h3>{{event.event}}</h3>
+										<span class="pb-2"> <i
+												class="fa-regular fa-calendar-days pe-2"></i>{{event.date}}</span>
 										<p>{{event.program}}</p>
 										<button class="courses-btn" type="button">+ Find More</button>
 									</div>
@@ -257,7 +258,7 @@
 
 			<!-- Partner Section -->
 			<section class="partner-container d-flex align-items-center justify-content-center mt-3">
-				<div class="partner d-flex flex-column align-items-center pt-4 pb-5 ">
+				<div class="partner d-flex flex-column align-items-center pt-4">
 					<div class="texts">
 						<h2>Partners</h2>
 						<p>Leverage agile framework to provide a robust synopsis for high level overviews.
@@ -283,49 +284,60 @@
 							<span>{{button.textBtn}}</span>
 						</button>
 					</div>
-					<!-- Logo and text -->
-					<div class="left-footer-side logo-img">
-						<img :src="'./img/' + footerNav.logo + '.png'" alt="">
-						<p class="mt-4">{{footerNav.text}}</p>
-						<div>
+					<div class="footer-main d-flex">
+						<!-- Logo and text -->
+						<div class="left-footer-side logo-img">
+							<img :src="'./img/' + footerNav.logo + '.png'" alt="">
+							<p class="mt-4">{{footerNav.text}}</p>
+
+							<div class="social-icons d-flex">
+								<div v-for="social in footerNav.socialMedias">
+									<div class="circle d-flex align-items-center justify-content-center">
+										<i :class="social.social"></i>
+									</div>
+								</div>
+							</div>
 
 						</div>
-					</div>
-					<!-- Nav links -->
-					<div class="nav-link d-flex">
-						<div>
-							<ul>
-								<li>
-									<h5>Get EduPrime</h5>
-								</li>
-								<li class="links" v-for="item, index in footerNav.navItemsGetEdu">
-									{{item.link}}
-								</li>
-							</ul>
-						</div>
-						<div>
-							<ul>
-								<li>
-									<h5>Networking</h5>
-								</li>
-								<li class="links" v-for="item, index in footerNav.navItemsNetworking">
-									{{item.link}}
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- Search -->
-					<div class="search">
-						<div class="input-search">
-							<input type="search" v-model="search" placeholder="Search...">
-							<div class="circle-icon d-flex"><i class="fa-solid fa-magnifying-glass"></i></div>
-						</div>
-						<h5>Search categories</h5>
-						<div class="categories d-flex">
-							<div v-for="categorie, index  in footerNav.categories"
-								v-show="categorie.categorie.toLowerCase().includes(search)">
-								<div>{{categorie.categorie}}</div>
+						<!-- Nav links -->
+						<div class="nav-link d-flex justify-content-center">
+							<div>
+								<ul>
+									<li>
+										<h5>Get EduPrime</h5>
+									</li>
+									<li class="links" v-for="item, index in footerNav.navItemsGetEdu">
+										{{item.link}}
+									</li>
+								</ul>
 							</div>
+							<div>
+								<ul>
+									<li>
+										<h5>Networking</h5>
+									</li>
+									<li class="links" v-for="item, index in footerNav.navItemsNetworking">
+										{{item.link}}
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- Search -->
+						<div class="search">
+							<div class="input-search">
+								<input type="search" v-model="search" placeholder="Search...">
+								<div class="circle-icon d-flex"><i class="fa-solid fa-magnifying-glass"></i></div>
+							</div>
+
+							<section class="categories-container">
+								<h5>Search categories</h5>
+								<div class="categories d-flex">
+									<div v-for="categorie, index  in footerNav.categories"
+										v-show="categorie.categorie.toLowerCase().includes(search)">
+										<div>{{categorie.categorie}}</div>
+									</div>
+								</div>
+							</section>
 						</div>
 					</div>
 

@@ -376,21 +376,11 @@ h2 {
     top: 195px;
     left: 120px;
     background-color: var(--red-bg);
-    box-shadow:
-        5.2px 3.1px 1.1px rgba(0, 0, 0, 0.011),
-        7.8px 4.6px 2.9px rgba(0, 0, 0, 0.014),
-        8.9px 5.2px 5.8px rgba(0, 0, 0, 0.017),
-        10.1px 5.9px 12px rgba(0, 0, 0, 0.024),
-        17px 10px 33px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--box-shadow);
 }
 
 .card-events {
-    box-shadow:
-        5.2px 3.1px 1.1px rgba(0, 0, 0, 0.011),
-        7.8px 4.6px 2.9px rgba(0, 0, 0, 0.014),
-        8.9px 5.2px 5.8px rgba(0, 0, 0, 0.017),
-        10.1px 5.9px 12px rgba(0, 0, 0, 0.024),
-        17px 10px 33px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--box-shadow);
     border-radius: 1rem;
     background-color: var(--light-white-bg);
     color: var(--petrol-grey-bg);
@@ -402,18 +392,33 @@ h2 {
 }
 
 /* Latest courses */
+.latest-courses {
+    padding: 0rem 4rem;
+}
+
+.latest-courses-row {
+    width: 100%;
+}
+
 .card-latest-courses img {
-    max-width: 100px;
+    max-width: 90px;
+    padding-bottom: 1.5rem;
 }
 
 .card-latest-courses {
     position: relative;
+    padding: 2rem 0rem;
+    box-shadow: var(--box-shadow3);
+    border: none;
+    min-width: 300px;
 }
 
 .card-latest-courses .courses-btn {
     position: absolute;
-    top: 262px;
-    left: 74px;
+    top: 90%;
+    left: 20%;
+    background-color: var(--red-bg);
+    padding: 1rem 1.5rem;
 }
 
 /* Examination */

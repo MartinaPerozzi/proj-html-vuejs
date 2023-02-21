@@ -183,21 +183,22 @@
 				</section>
 			</div>
 
-			<!-- New section Latest Courses -->
-			<section class="d-flex flex-column align-items-center">
-				<h2 class="align-self-start">Latest Courses</h2>
-				<div class="d-flex">
-					<ul class="event-list d-flex">
-						<li v-for="(course, index) in latestCourses">
-							<div class="card card-latest-courses d-flex flex-column align-items-center p-5">
-								<img :src="'./img/'+ course.logo + '.png'" alt="Latest Courses Logos">
-								<h4> {{course.course}}</h4>
-								<span> <i class="fa-regular fa-calendar-days pe-2"></i> {{course.teacher}}</span>
-								<p>{{course.price}}</p>
-								<button class="courses-btn" type="button">+ View Courses</button>
-							</div>
-						</li>
-					</ul>
+			<!-- Section Latest Courses -->
+			<section class="latest-courses d-flex flex-column align-items-center">
+				<h2 class="align-self-start mb-5">Latest Courses</h2>
+				<div class="latest-courses-row row-cols-4 d-flex">
+
+					<div class="col pe-4" v-for="(course, index) in latestCourses">
+						<div class="card card-latest-courses d-flex flex-column align-items-center">
+							<img :src="'./img/'+ course.logo + '.png'" alt="Latest Courses Logos">
+							<h4> {{course.course}}</h4>
+							<span> <i class="fa-regular fa-user pe-2"></i> {{course.teacher}}</span>
+							<p>{{course.price}}</p>
+							<button class="courses-btn" type="button"> <i class="fa-solid fa-eye pe-2"></i> View
+								Courses</button>
+						</div>
+					</div>
+
 				</div>
 			</section>
 

@@ -117,7 +117,7 @@ button {
 }
 
 .jumbotron-content {
-    width: 45%;
+    width: 55%;
     text-align: center;
     margin: 0 auto;
     padding-top: 4.8rem;
@@ -265,7 +265,7 @@ h2 {
     position: relative;
     width: 99vw;
     margin-top: 9rem;
-    height: 1700px;
+    height: 1782px;
 }
 
 /* Wave background */
@@ -287,7 +287,7 @@ h2 {
     content: "";
     background-image: url(../svg/svg-1.svg);
     position: absolute;
-    top: 1525px;
+    top: 1603px;
     right: 0px;
     bottom: 0px;
     left: 0px;
@@ -309,7 +309,7 @@ h2 {
 }
 
 .diagram {
-    padding: 2rem 7rem 7rem 7rem;
+    padding: 4rem 7rem 7rem 7rem;
     color: var(--white-bg);
     background-color: var(--red-bg);
     height: 90%;
@@ -373,8 +373,8 @@ h2 {
 
 .event-list button {
     position: absolute;
-    top: 195px;
-    left: 120px;
+    top: 88%;
+    left: 28%;
     background-color: var(--red-bg);
     box-shadow: var(--box-shadow);
 }
@@ -385,6 +385,7 @@ h2 {
     background-color: var(--light-white-bg);
     color: var(--petrol-grey-bg);
     text-align: center;
+    min-width: 300px;
 }
 
 .card-event p {
@@ -430,8 +431,50 @@ h2 {
     background-color: var(--red-bg);
 }
 
+/* Subscribe Section */
+.subscrive h3 {
+    color: var(--light-white-bg);
+}
 
-/* FOOTER */
+.subscrive {
+    background-color: var(--red-bg);
+    padding: 2rem 5rem;
+    width: 100%;
+    gap: 7rem;
+}
+
+.input-email {
+    position: relative;
+    flex-basis: 30%;
+}
+
+.subscrive input {
+    border: none;
+    border-radius: 2rem;
+    padding: 1.2rem;
+    min-width: 250px;
+    width: 100%;
+}
+
+.subscrive .circle-icon {
+    left: 87%;
+}
+
+/* PARTNER Section **************************/
+.partner-logos {
+    gap: 2rem;
+}
+
+.partner-logos img {
+    opacity: 0.4;
+}
+
+.partner>div {
+    flex-basis: 55%;
+    text-align: center;
+}
+
+/* FOOTER *********************************/
 footer {
     background-color: var(--red-bg);
     padding: 6rem 3rem;

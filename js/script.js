@@ -110,6 +110,34 @@ const app = Vue.createApp({
                 },
 
             ],
+            partners: [
+                {
+                    partner: "partner-2",
+                },
+                {
+                    partner: "partner-3",
+                },
+                {
+                    partner: "partner-4",
+                },
+                {
+                    partner: "partner-5",
+                },
+                {
+                    partner: "partner-6",
+                },
+                {
+                    partner: "partner-8",
+                },
+                {
+                    partner: "partner-1",
+                },
+                {
+                    partner: "partner-7",
+                },
+
+
+            ],
 
             footerNav: {
                 logo: "theme_eduprime_logo",

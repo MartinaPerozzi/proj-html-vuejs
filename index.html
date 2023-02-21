@@ -237,6 +237,31 @@
 				</div>
 			</section>
 
+			<!-- Subscribe -->
+			<section class="subscrive d-flex align-items-center justify-content-center">
+				<h3>Subscrive Now to Our Newsletter!</h3>
+				<div class="input-email">
+					<input type="email" v-model="search" placeholder="Email address...">
+					<div class="circle-icon d-flex"><i class="fa-solid fa-magnifying-glass"></i></div>
+				</div>
+			</section>
+
+			<!-- Partner Section -->
+			<section class="partner pt-4 pb-5 d-flex align-items-center justify-content-center">
+				<div class="d-flex flex-column align-items-center">
+					<h2>Partners</h2>
+					<p class="text">Leverage agile framework to provide a robust synopsis for high level overviews.
+						Iterative
+						approaches to corporate strategy.</p>
+					<div class="partner-logos d-flex">
+						<div v-for="partner in partners">
+							<img :src="'./img/' + partner.partner + '.png'" alt="">
+						</div>
+					</div>
+				</div>
+
+			</section>
+
 
 
 			<!-- FOOTER -->

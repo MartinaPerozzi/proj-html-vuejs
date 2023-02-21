@@ -7,7 +7,7 @@ header {
     min-height: 700px;
 }
 
-/* Waves background */
+/* Waves background ***********/
 header::before {
     content: "";
     background-image: url(../img/theme_slider2_bg-1.jpg);
@@ -41,14 +41,14 @@ header::after {
     max-width: 250px;
 }
 
-/* Nav-bar */
+/* Nav-bar ************/
 header ul {
     list-style-type: none;
     margin: 0;
 }
 
 header li {
-    padding-right: 3.5rem;
+    padding-right: 2rem;
     position: relative;
     font-family: 'Fredoka', sans-serif;
     font-size: 1.1rem;
@@ -94,7 +94,7 @@ button {
     color: var(--red-bg);
 }
 
-/* JUMBOTRON */
+/* JUMBOTRON *********************************/
 .jumbotron-edu {
     position: relative;
     gap: 1rem;
@@ -105,8 +105,8 @@ button {
     left: 0px;
     background-color: var(--yellow-bg);
     padding: 0rem 0.8rem;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
     box-shadow:
         0.9px 0px 4px rgba(0, 0, 0, 0.045),
         7px 0px 32px rgba(0, 0, 0, 0.09);
@@ -143,7 +143,7 @@ button {
 }
 
 
-/* First Section */
+/* First Section ***********************************/
 .section-courses {
     background-image: url(../img/home-background.png);
     color: var(--petrol-grey-bg);
@@ -178,16 +178,18 @@ h2 {
     flex-basis: 40%;
 }
 
-/* Second Section */
+/* Second Section *******************************/
 
 .speech-bubble {
-    width: 160px;
-    height: 100px;
-    background-color: #00aabb;
-    position: relative;
-    border-radius: 1rem;
-    font-size: 3rem;
+    background-color: var(--red-bg);
+    position: absolute;
+    color: var(--white-bg);
 }
+
+.filter {
+    mix-blend-mode: plus-lighter;
+}
+
 
 .speech-bubble:after {
     content: '';
@@ -197,7 +199,7 @@ h2 {
     width: 0;
     height: 0;
     border: 20px solid transparent;
-    border-top-color: #00aabb;
+    border-top-color: var(--red-bg);
     border-bottom: 0;
     border-left: 0;
     margin-left: -10px;
@@ -205,12 +207,7 @@ h2 {
 }
 
 .faculties-row {
-    box-shadow:
-        5.2px 3.1px 1.1px rgba(0, 0, 0, 0.011),
-        7.8px 4.6px 2.9px rgba(0, 0, 0, 0.014),
-        8.9px 5.2px 5.8px rgba(0, 0, 0, 0.017),
-        10.1px 5.9px 12px rgba(0, 0, 0, 0.024),
-        17px 10px 33px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--box-shadow);
     width: 100%;
     color: var(--red-bg);
     font-size: 1.1rem;
@@ -225,7 +222,11 @@ h2 {
 
 .facultie {
     border: 1px solid var(--light-grey-border);
-    padding: 2.5rem 4.5rem;
+    position: relative;
+}
+
+.facultie .img {
+    padding: 2.5rem 4.5rem 0rem 4.5rem;
 }
 
 .faculties-title {
@@ -246,7 +247,7 @@ h2 {
     color: var(--petrol-grey-bg)
 }
 
-/* Third Section */
+/* Third Section Law Faculty ****************************/
 .courses-law {
     line-height: 2rem;
     margin-top: 5rem;
@@ -254,13 +255,21 @@ h2 {
 
 .courses-law p {
     color: var(--grey-txt);
+    font-weight: 300;
+}
+
+.courses-law h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+
 }
 
 .courses-law .courses-btn {
     background-color: var(--red-bg);
 }
 
-/* Diagram University Year Section */
+/* Diagram University Year Section ************/
 .university-year {
     position: relative;
     width: 99vw;
@@ -268,7 +277,8 @@ h2 {
     height: 1782px;
 }
 
-/* Wave background */
+
+/* Wave background ****************************/
 
 .university-year::before {
     content: "";
@@ -355,7 +365,7 @@ h2 {
     margin-left: 5rem;
 }
 
-/* EVENTS */
+/* EVENTS ***********************************/
 .events {
     color: var(--medium-petrol-grey-text);
     text-align: center;
@@ -392,7 +402,7 @@ h2 {
     text-overflow: ellipsis
 }
 
-/* Latest courses */
+/* Latest courses ******************************/
 .latest-courses-row {
     width: 100%;
 }

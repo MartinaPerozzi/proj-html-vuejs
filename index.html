@@ -78,7 +78,7 @@
 
 			<!-- Section 1 -->
 			<section class="section-courses">
-				<div class="courses container d-flex align-items-center">
+				<div class="courses container-edu d-flex align-items-center">
 					<div class="text-side">
 						<img src="./img/books-icon.png" alt="icon books">
 						<h2>Thounsands of courses for any type of student</h2>
@@ -94,20 +94,27 @@
 				</div>
 			</section>
 
-			<!-- Second sectiom -->
+			<!-- Second section Faculties-->
 			<section class="faculties-title d-flex flex-column justify-content-center align-items-center">
 				<h2>Faculties available at EduPrime</h2>
 				<p>A single university with a load of courses, tailored to satisfy any student's needs.</p>
 
 				<div class="faculties-row d-flex justify-content-center mt-3">
-					<div class="facultie" v-for="facultie, index in faculties">
-						<img :src="'./img/' + facultie.img + '.png'" alt="Facultie icon">
-						<div>{{facultie.facultie}}</div>
+					<div class="container-edu d-flex">
+						<div class="facultie" v-for="facultie, facultieIndex in faculties"
+							:class="(facultieIndex==0)? 'speech-bubble' : ''">
+							<div class="img">
+								<img :src="'./img/' + facultie.img + '.png'" alt="Facultie icon"
+									:class="(facultieIndex==0)? 'filter' : ''">
+							</div>
+							<div class="pb-4">{{facultie.facultie}}</div>
+
+						</div>
 					</div>
 				</div>
 			</section>
 
-			<!-- Third Section -->
+			<!-- Third Section Law Faculty-->
 			<section class="section-courses">
 				<div class="courses-law container d-flex align-items-center">
 					<div class="image-side">
@@ -129,7 +136,7 @@
 				<section class="diagram d-flex flex-column align-items-center">
 					<img class="icon-edu" src="./img/Clock-and-Bell.png" alt="Year icon">
 					<h2>University Year</h2>
-					<div class="dates d-flex flex-column align-items-center">
+					<div class=" dates d-flex flex-column align-items-center">
 						<div class="key-times d-flex justify-content-end">
 							<div>
 								<h5>Demo Classes</h5>
@@ -163,7 +170,7 @@
 						</div>
 					</div>
 					<!-- EVENTS -->
-					<section class="events d-flex flex-column align-items-center mt-5">
+					<section class="container-edu events d-flex flex-column align-items-center mt-5">
 						<img class="icon-edu" src="./img/upcoming-events-calendar-icon.png" alt="Year icon">
 						<h2>Upcoming Events</h2>
 						<div class="d-flex mb-5">
@@ -264,8 +271,6 @@
 
 			</section>
 
-
-
 			<!-- FOOTER -->
 			<footer>
 				<div class="footer-nav d-flex">
@@ -327,13 +332,6 @@
 				</div>
 
 			</footer>
-
-
-
-
-
-
-
 
 		</div>
 

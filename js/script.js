@@ -240,6 +240,7 @@ const app = Vue.createApp({
 
             },
             search: "",
+            facultieIndex: 0,
 
         }
     },

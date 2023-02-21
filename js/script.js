@@ -116,11 +116,11 @@ const app = Vue.createApp({
                 text: "EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses, secondary schools etc.",
                 buttons: [
                     {
-                        imgBtn: "svg-2.svg",
+                        imgBtn: "svg-3.svg",
                         textBtn: "Purchase Theme"
                     },
                     {
-                        imgBtn: "svg-3.svg",
+                        imgBtn: "svg-2.svg",
                         textBtn: "Related Themes"
                     }
                 ],
@@ -182,29 +182,36 @@ const app = Vue.createApp({
                 categories: [
                     {
                         categorie: "ECONOMY",
+                        visible: false,
                     },
                     {
                         categorie: "DESIGN",
+                        visible: false,
                     },
                     {
                         categorie: "COACHING",
+                        visible: false,
                     },
                     {
                         categorie: "BUSINESS",
+                        visible: false,
                     },
                     {
                         categorie: "MEDICINE",
+                        visible: false,
                     },
                     {
                         categorie: "LAW",
+                        visible: false,
                     },
                     {
                         categorie: "FITNESS",
+                        visible: false,
                     },
                 ],
 
-                search: "",
-            }
+            },
+            search: "",
 
         }
     },
@@ -216,6 +223,8 @@ const app = Vue.createApp({
             return lastItem;
         }
     },
+
+
 
 });
 app.mount("#app");

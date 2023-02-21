@@ -429,48 +429,80 @@ h2 {
 /* FOOTER */
 footer {
     background-color: var(--red-bg);
-    color: var(--white-bg);
-}
-
-.footer-nav {
-    padding: 3rem;
+    padding: 6rem 3rem;
+    color: var(--light-white-txt);
 }
 
 .buttons-footer {
     gap: 1rem;
+    flex-basis: 15%;
 }
 
 .buttons-footer button {
     border-radius: 0.3rem;
-    background-color: var(--hard-grey-bg);
-    font-size: 0.9rem;
+    background-color: var(--grey-bg);
+    font-size: 0.8rem;
     font-weight: 300;
     color: var(--light-white-txt);
+    padding: 0.5rem 1rem;
 }
 
 .buttons-footer img {
-    width: 20px;
+    width: 15px;
     margin-right: 1rem;
 }
 
+/* LOGO-leftside */
 .left-footer-side {
-    flex-basis: 20%;
-    padding: 0rem 2rem;
+    flex-basis: 30%;
+    padding: 0rem 1rem;
 }
 
+.left-footer-side p {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+/* NAV LINKS */
+.nav-link {
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+.nav-link ul {
+    flex-basis: 20%;
+    font-weight: 300;
+    margin: 0;
+}
+
+.nav-link .links {
+    padding-top: 0.5rem;
+}
+
+/* SEARCH */
 footer input {
     border: none;
     border-radius: 2rem;
-    padding: 0.8rem;
+    padding: 1.2rem;
     min-width: 250px;
+    width: 100%;
 }
 
-.search-input {
+.search {
+    flex-basis: 30%;
+    padding-left: 2rem;
+    text-align: right;
+}
+
+.input-search {
     position: relative;
+    padding-bottom: 3rem;
+    color: var(--light-grey-txt);
+    width: 100%;
 }
 
 .circle-icon {
-    width: 50px;
+    width: 62px;
     aspect-ratio: 1;
     background-color: var(--yellow-bg);
     align-items: center;
@@ -478,6 +510,24 @@ footer input {
     clip-path: circle(50% at 50% 50%);
     position: absolute;
     top: 0px;
-    left: 200px;
+    left: 85%;
+    color: var(--white-bg);
+}
 
+/* Search categories */
+.categories {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: end;
+    font-size: 0.8rem;
+}
+
+.categories>div {
+    border: 1px solid var(--light-petrol-border);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+footer h5 {
+    color: var(--white-bg);
 }

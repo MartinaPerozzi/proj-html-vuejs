@@ -18,7 +18,7 @@
 	--green-txt: #79B530;
 	--grey-txt: #8B8B8A;
 	--medium-grey-txt: #7F7F7F;
-	--hard-grey-txt: #74777B;
+	--light-grey-txt: #74777B;
 	--petrol-grey-txt: #70727E;
 	--medium-petrol-grey-text: #5C5E6C;
 	--hard-petrol-grey: #434959;
@@ -52,4 +52,10 @@ body {
 
 ul {
 	list-style: none;
+}
+
+/* Titles */
+h5 {
+	font-size: 1.1rem;
+	padding-bottom: 1rem;
 }

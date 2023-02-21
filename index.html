@@ -29,7 +29,7 @@
 	<link rel="stylesheet" href="./css/utils.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<!-- JAVASCRIPT-Vue -->
-	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.global.min.js"></script>
 	<!-- My-JS -->
 	<script type="text/javascript" src="./js/script.js" defer></script>
 
@@ -242,7 +242,7 @@
 			<footer>
 				<div class="footer-nav d-flex">
 					<!-- Buttons left side -->
-					<div class="buttons-footer d-flex flex-column">
+					<div class="buttons-footer d-flex flex-column justify-content-end pe-3">
 						<button type="button" v-for="button, index in footerNav.buttons">
 							<img :src="'./svg/' + button.imgBtn" alt="Button-icon">
 							<span>{{button.textBtn}}</span>
@@ -251,7 +251,7 @@
 					<!-- Logo and text -->
 					<div class="left-footer-side logo-img">
 						<img :src="'./img/' + footerNav.logo + '.png'" alt="">
-						<p>{{footerNav.text}}</p>
+						<p class="mt-4">{{footerNav.text}}</p>
 						<div>
 
 						</div>
@@ -261,9 +261,9 @@
 						<div>
 							<ul>
 								<li>
-									<h4>Get EduPrime</h4>
+									<h5>Get EduPrime</h5>
 								</li>
-								<li v-for="item, index in footerNav.navItemsGetEdu">
+								<li class="links" v-for="item, index in footerNav.navItemsGetEdu">
 									{{item.link}}
 								</li>
 							</ul>
@@ -271,22 +271,26 @@
 						<div>
 							<ul>
 								<li>
-									<h4>Networking</h4>
+									<h5>Networking</h5>
 								</li>
-								<li v-for="item, index in footerNav.navItemsNetworking">
+								<li class="links" v-for="item, index in footerNav.navItemsNetworking">
 									{{item.link}}
 								</li>
 							</ul>
 						</div>
 					</div>
 					<!-- Search -->
-					<div class="search-input">
-						<input type="search" v-modal="footerNav.search" placeholder="Search...">
-						<div class="circle-icon d-flex"><i class="fa-solid fa-magnifying-glass"></i></div>
+					<div class="search">
+						<div class="input-search">
+							<input type="search" v-model="search" placeholder="Search...">
+							<div class="circle-icon d-flex"><i class="fa-solid fa-magnifying-glass"></i></div>
+						</div>
 						<h5>Search categories</h5>
-						<div v-for="categorie, index  in footerNav.categories">
-							<span>{{categorie.categorie}}</span>
-
+						<div class="categories d-flex">
+							<div v-for="categorie, index  in footerNav.categories"
+								v-show="categorie.categorie.toLowerCase().includes(search)">
+								<div>{{categorie.categorie}}</div>
+							</div>
 						</div>
 					</div>
 

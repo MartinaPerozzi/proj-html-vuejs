@@ -142,7 +142,6 @@ button {
     font-weight: 300;
 }
 
-
 /* First Section ***********************************/
 .section-courses.first {
     background-image: url(../img/home-background.png);
@@ -272,10 +271,11 @@ h2 {
 /* Diagram University Year Section ************/
 .university-year {
     position: relative;
-    width: 99vw;
-    margin-top: 9rem;
-    height: 1782px;
-    min-width: 1200px;
+    /* width: 99vw; */
+    /* margin-top: 9rem; */
+    /* height: 1782px;
+    min-width: 1200px; */
+    padding-top: 80px;
 }
 
 
@@ -285,11 +285,9 @@ h2 {
     content: "";
     background-image: url(../svg/svg-0.svg);
     position: absolute;
-    top: -75px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 1;
+    height: 89px;
+    width: 100%;
+    top: 7px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -298,14 +296,15 @@ h2 {
     content: "";
     background-image: url(../svg/svg-1.svg);
     position: absolute;
-    top: 1603px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 1;
+
+
+    bottom: -98px;
+
+
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100px;
+    width: 100%;
 }
 
 /* DIAGRAM **************************************** */
@@ -419,6 +418,10 @@ h2 {
 }
 
 /* Latest courses ******************************/
+.latest-courses {
+    margin-top: 5rem;
+}
+
 .latest-courses-row {
     width: 100%;
 }

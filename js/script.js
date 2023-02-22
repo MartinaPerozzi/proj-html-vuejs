@@ -2,6 +2,7 @@
 const app = Vue.createApp({
     data: function () {
         return {
+            // Header
             headerNavbar: {
                 logo: "theme_eduprime_logo",
                 navItems: [
@@ -65,7 +66,7 @@ const app = Vue.createApp({
                 ],
 
             },
-
+            // Main Sections
             faculties: [
                 {
                     img: "Gavel-v2",
@@ -165,7 +166,7 @@ const app = Vue.createApp({
                     partner: "partner-7",
                 },
             ],
-
+            // Footer
             footerNav: {
                 logo: "theme_eduprime_logo",
                 text: "EduPrime is the most versatile WordPress theme for educational purposes, showcasing universities, courses, secondary schools etc.",

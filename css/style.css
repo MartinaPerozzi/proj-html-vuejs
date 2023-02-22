@@ -715,3 +715,19 @@ footer h5 {
 .text-side button:hover {
     background-color: var(--yellow-bg);
 }
+
+.dropdown-edu li:last-child:hover {
+    background-color: var(--yellow-bg);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.dropdown-edu li:hover {
+    background-color: var(--yellow-bg);
+}
+
+.dropdown-edu li:first-child:hover {
+    background-color: var(--yellow-bg);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}

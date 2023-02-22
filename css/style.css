@@ -81,6 +81,7 @@ header li {
     background-color: var(--red-bg);
     z-index: 1;
     border-radius: 1rem;
+    box-shadow: var(--box-shadow);
 }
 
 .dropdown-edu li {
@@ -539,12 +540,6 @@ h2 {
 .subscrive .circle-icon {
     left: 87%;
 }
-
-/* PARTNER Section **************************/
-/* .partner {
-    background-image: url(../img/background-wave3.png);
-    background-position-y: -310%;
-} */
 
 .partner-container {
     background: linear-gradient(180deg, var(--white-bg) 50%, var(--light-white-bg) 15%);

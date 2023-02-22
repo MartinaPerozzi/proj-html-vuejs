@@ -282,8 +282,8 @@ const app = Vue.createApp({
 
         activeFacultie(index) {
             this.facultieIndex = index
-
         },
+
     },
 
 

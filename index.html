@@ -37,7 +37,7 @@
 
 <body>
 	<div id="app">
-		<div class="">
+		<div>
 			<!-- HEADER -->
 			<header id="top">
 				<!-- Navbar -->
@@ -81,7 +81,7 @@
 				</section>
 			</header>
 
-			<!-- Section 1 -->
+			<!-- Section 1 Courses -->
 			<section class="section-courses first">
 				<div class="bubble-container">
 					<div class="bubble">
@@ -124,7 +124,7 @@
 				</div>
 			</section>
 
-			<!-- Third Section Law Faculty-->
+			<!-- Third Section Faculty Section-->
 			<section class="section-courses mb-5" v-for="facultie, index in faculties">
 				<div class="courses-law container d-flex align-items-center justify-content-center"
 					v-if="facultieIndex==index">
@@ -142,7 +142,7 @@
 				</div>
 			</section>
 
-			<!-- Section diagram / Events -->
+			<!-- Section Diagram / Events -->
 			<div class="university-year">
 				<section class="diagram d-flex flex-column align-items-center">
 					<img class="icon-edu pt-5" src="./img/Clock-and-Bell.png" alt="Year icon">
@@ -222,7 +222,7 @@
 				</div>
 			</section>
 
-			<!-- Sections illustration/text -->
+			<!-- Sections Illustration/Text -->
 			<section class="section-courses examination">
 				<div class="courses container-edu d-flex align-items-center">
 					<div class="text-side">
@@ -264,7 +264,7 @@
 				</div>
 			</section>
 
-			<!-- Partner Section -->
+			<!-- Section Partner -->
 			<section class="partner-container d-flex align-items-center justify-content-center mt-3">
 
 				<div class="partner d-flex flex-column align-items-center pt-5">
@@ -287,7 +287,7 @@
 
 			<!-- FOOTER -->
 			<footer>
-				<div class="footer-nav d-flex">
+				<div class="footer-nav d-flex pb-2">
 					<!-- Buttons left side -->
 					<div class="buttons-footer d-flex flex-column justify-content-end pe-3">
 						<button type="button" v-for="button, index in footerNav.buttons">

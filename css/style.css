@@ -168,7 +168,7 @@ button {
     color: var(--petrol-grey-bg);
     background-position: right;
     padding: 0 3rem 5rem 3rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -195,6 +195,37 @@ h2 {
 
 .image-side {
     flex-basis: 40%;
+}
+
+/* Small bubble left side */
+.bubble {
+    background-color: var(--hard-grey-bg);
+    position: absolute;
+    color: var(--light-white-txt);
+    max-width: 200px;
+    font-size: 0.8rem;
+    text-align: center;
+    top: -100px;
+    border-radius: 0.2rem;
+    padding: 0.1rem 0.5rem;
+}
+
+.bubble-container {
+    position: relative;
+}
+
+.bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-top-color: var(--hard-grey-bg);
+    border-bottom: 0;
+    margin-left: -9px;
+    margin-bottom: -9px;
 }
 
 /* Second Section *******************************/
@@ -314,11 +345,7 @@ h2 {
     content: "";
     background-image: url(../svg/svg-1.svg);
     position: absolute;
-
-
     bottom: -98px;
-
-
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100px;

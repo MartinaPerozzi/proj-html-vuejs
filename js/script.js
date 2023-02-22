@@ -8,10 +8,22 @@ const app = Vue.createApp({
                     {
                         nav: "Home",
                         dropdown: true,
+                        dropdownItems: [
+                            "About Us",
+                            "Faculties",
+                        ],
+                        pop: false,
                     },
                     {
                         nav: "Courses",
                         dropdown: true,
+                        dropdownItems: [
+                            "Law",
+                            "Economy",
+                            "Medicine",
+                            "Computer Science",
+                            "Graphic Design",
+                        ],
                     },
                     {
                         nav: "About Us",
@@ -20,10 +32,22 @@ const app = Vue.createApp({
                     {
                         nav: "News",
                         dropdown: true,
+                        dropdownItems: [
+                            "News Law",
+                            "News Economy",
+                            "News Medicine",
+                            "Latest Courses",
+                        ],
                     },
                     {
                         nav: "Pages",
                         dropdown: true,
+                        dropdownItems: [
+                            "Courses",
+                            "Open day",
+                            "About",
+                            "Q&A",
+                        ],
                     },
                     {
                         nav: "Contact",
@@ -244,7 +268,6 @@ const app = Vue.createApp({
             },
             search: "",
             facultieIndex: 0,
-
         }
     },
 

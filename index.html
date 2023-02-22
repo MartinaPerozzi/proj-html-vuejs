@@ -46,8 +46,13 @@
 						<img :src="'./img/' + headerNavbar.logo + '.png'" alt="logo image">
 					</div>
 					<ul class="nav-list d-flex align-items-center">
-						<li v-for="(item, index) in headerNavbar.navItems" :class="(item.dropdown)? 'dropdown': ''">
+						<li v-for="(item, index) in headerNavbar.navItems" :class="(item.dropdown)? 'dropdown': ''"
+							@click="item.pop=!item.pop" :tabindex="index" @blur="item.pop=false">
 							{{item.nav}}
+							<ul v-show="item.pop && item.dropdown" class="dropdown-edu">
+								<li v-for="itemlink in item.dropdownItems">{{itemlink}}</li>
+							</ul>
+
 							<div v-if="index==lastNavLink">
 								<button class="courses-btn" type="button"> {{item.buttonText}}</button>
 							</div>

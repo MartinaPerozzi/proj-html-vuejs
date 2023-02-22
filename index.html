@@ -126,7 +126,8 @@
 
 			<!-- Third Section Law Faculty-->
 			<section class="section-courses mb-5" v-for="facultie, index in faculties">
-				<div class="courses-law container d-flex align-items-center" v-if="facultieIndex==index">
+				<div class="courses-law container d-flex align-items-center justify-content-center"
+					v-if="facultieIndex==index">
 					<div class="image-side">
 						<img :src="'./img/' + facultie.imgSection" alt="Illustration Law">
 					</div>
@@ -258,7 +259,7 @@
 			<section class="subscrive d-flex align-items-center justify-content-center">
 				<h3>Subscrive Now to Our Newsletter!</h3>
 				<div class="input-email">
-					<input type="email" v-model="search" placeholder="Email address...">
+					<input type="email" placeholder="Email address...">
 					<div class="circle-icon d-flex"><i class="fa-solid fa-paper-plane"></i></div>
 				</div>
 			</section>

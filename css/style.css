@@ -408,10 +408,6 @@ h2 {
     text-align: center;
 }
 
-/* .box-day {
-    margin-right: 6rem;
-} */
-
 .bottom-keys .box-day {
     margin-right: 0rem;
     /* margin-left: 3rem; */
@@ -464,7 +460,6 @@ h2 {
     text-align: center;
     min-width: 300px;
 }
-
 
 /* Latest courses ******************************/
 .latest-courses {

@@ -40,7 +40,7 @@
 		<div class="">
 			<!-- HEADER -->
 			<!-- Navbar -->
-			<header>
+			<header id="top">
 				<div class="navbar-edu d-flex justify-content-between align-items-center pt-5">
 					<div class="logo-img">
 						<img :src="'./img/' + headerNavbar.logo + '.png'" alt="logo image">
@@ -291,7 +291,7 @@
 							<img :src="'./img/' + footerNav.logo + '.png'" alt="">
 							<p class="mt-4">{{footerNav.text}}</p>
 
-							<div class="social-icons d-flex">
+							<div class="social-icons d-flex mt-4">
 								<div v-for="social in footerNav.socialMedias">
 									<div class="circle d-flex align-items-center justify-content-center">
 										<i :class="social.social"></i>
@@ -345,7 +345,9 @@
 					<div class="circle-container d-flex flex-column justify-content-end pe-5 align-items-end">
 
 						<div class="circle-go-top d-flex align-items-center justify-content-center mt-3 mb-4">
-							<img src="./img/back-to-top-arrow.svg" alt="">
+							<a href="#top">
+								<img src="./img/back-to-top-arrow.svg" alt="">
+							</a>
 						</div>
 					</div>
 				</div>

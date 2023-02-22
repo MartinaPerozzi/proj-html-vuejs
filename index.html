@@ -146,7 +146,7 @@
 				<section class="diagram d-flex flex-column align-items-center">
 					<img class="icon-edu pt-5" src="./img/Clock-and-Bell.png" alt="Year icon">
 					<h2>University Year</h2>
-					<div class="dates d-flex flex-column align-items-center">
+					<div class="container-edu dates d-flex flex-column align-items-center">
 						<div class="key-times d-flex justify-content-end">
 							<div>
 								<h5>Demo Classes</h5>
@@ -156,9 +156,8 @@
 							</div>
 							<div class="box-day">
 								<h5>Graduation Day</h5>
-								<p>In the first week, students try to accommodate with the teaching style and choose
-									their
-									optional courses.</p>
+								<p>On the day of graduation, all students gather fot the ceremony and then network and
+									party among others.</p>
 							</div>
 
 						</div>
@@ -203,16 +202,16 @@
 
 			<!-- Section Latest Courses -->
 			<section class="container-edu latest-courses d-flex flex-column align-items-center">
-				<h2 class="align-self-start mb-5">Latest Courses</h2>
-				<div class="latest-courses-row row-cols-4 d-flex">
+				<h2 class="align-self-start mb-4">Latest Courses</h2>
+				<div class="latest-courses-row d-flex">
 
-					<div class="col pe-4" v-for="(course, index) in latestCourses">
+					<div v-for="(course, index) in latestCourses">
 						<div class="card card-latest-courses d-flex flex-column align-items-center">
 							<img :src="'./img/'+ course.logo + '.png'" alt="Latest Courses Logos">
 							<h4> {{course.course}}</h4>
-							<span> <i class="fa-regular fa-user pe-2"></i> Teacher:
+							<span> <i class="fa-regular fa-user pe-1"></i> Teacher:
 								<strong>{{course.teacher}}</strong></span>
-							<p><i class="fa-regular fa-money-bill-1 pe-2"></i> Price: <strong>{{course.price}}</strong>
+							<p><i class="fa-regular fa-money-bill-1 pe-1"></i> Price: <strong>{{course.price}}</strong>
 							</p>
 							<button class="courses-btn" type="button"> <i class="fa-solid fa-eye pe-2"></i> View
 								Courses</button>

@@ -93,7 +93,7 @@ header li {
     border-bottom: 1px solid var(--white-bg);
 }
 
-/* BUTTON CONTRAST ISSUE */
+/* BUTTON & CONTRAST ISSUE */
 button {
     font-size: 1.1rem;
     font-weight: 500;
@@ -123,6 +123,7 @@ button {
     gap: 1rem;
 }
 
+/* Left side icon */
 .fast-icons {
     position: absolute;
     left: 0px;
@@ -183,6 +184,7 @@ button {
     max-width: 60px;
 }
 
+/* Title (utils) */
 h2 {
     font-family: 'Fredoka', sans-serif;
     font-weight: 600;
@@ -323,16 +325,10 @@ h2 {
 /* Diagram University Year Section ************/
 .university-year {
     position: relative;
-    /* width: 99vw; */
-    /* margin-top: 9rem; */
-    /* height: 1782px;
-    min-width: 1200px; */
     padding-top: 80px;
 }
 
-
 /* Wave background ****************************/
-
 .university-year::before {
     content: "";
     background-image: url(../svg/svg-0.svg);
@@ -340,7 +336,7 @@ h2 {
     height: 89px;
     width: 100%;
     top: -7px;
-    background-size: 100%;
+    background-size: 100%, 100%;
     background-repeat: no-repeat;
 }
 
@@ -357,7 +353,7 @@ h2 {
 
 /* DIAGRAM **************************************** */
 .key-times p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: 1.5rem;
     font-weight: 300;
     color: var(--light-white-txt);
@@ -396,26 +392,26 @@ h2 {
 }
 
 .key-times {
-    gap: 6rem;
+    gap: 3rem;
 }
 
 .key-times div {
-    flex-basis: 33%;
+    flex-basis: 38%;
     align-items: flex-end;
     text-align: center;
 }
 
-.box-day {
+/* .box-day {
     margin-right: 6rem;
-}
+} */
 
 .bottom-keys .box-day {
     margin-right: 0rem;
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
 }
 
 .bottom-keys {
-    gap: 6rem;
+    gap: 2rem;
 }
 
 .key-times h5 {
@@ -482,13 +478,14 @@ h2 {
     padding: 2rem 0rem;
     box-shadow: var(--box-shadow3);
     border: none;
-    min-width: 300px;
+    min-width: 288px;
+    line-height: 2rem;
 }
 
 .card-latest-courses .courses-btn {
     position: absolute;
     top: 90%;
-    left: 20%;
+    left: 18%;
     background-color: var(--red-bg);
     padding: 1rem 1.5rem;
 }
@@ -572,7 +569,6 @@ h2 {
 
 .partner img {
     cursor: pointer;
-
 }
 
 /* FOOTER *********************************/
@@ -600,9 +596,7 @@ footer {
     font-weight: 300;
     color: var(--light-white-txt);
     padding: 0.5rem 1rem;
-    box-shadow: 5.3px 2.6px 14.3px rgba(0, 0, 0, 0.51),
-        14px 7px 56px rgba(0, 0, 0, 0.151);
-
+    box-shadow: var(--box-shadow-btn);
 }
 
 .buttons-footer img {
@@ -634,7 +628,6 @@ footer {
 
 .social-icons {
     gap: 1rem;
-
 }
 
 /* NAV LINKS */
@@ -710,6 +703,8 @@ footer h5 {
 
 .rights {
     color: var(--yellow-bg);
+    font-weight: 300;
+    font-size: 1.1rem;
 }
 
 .circle-go-top {
@@ -724,7 +719,7 @@ footer h5 {
     cursor: pointer;
 }
 
-/* HOVER EFFECTS */
+/* HOVER EFFECTS ************************************/
 .events .view-all:hover {
     background-color: var(--light-red-bg);
 }

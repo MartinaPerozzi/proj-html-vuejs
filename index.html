@@ -101,21 +101,20 @@
 
 				<div class="faculties-row d-flex justify-content-center mt-3">
 					<div class="container-edu d-flex">
-						<div class="facultie" v-for="facultie, facultieIndex in faculties"
-							:class="(facultieIndex==0)? 'speech-bubble' : ''">
+						<div class="facultie" v-for="facultie, index in faculties"
+							:class="(facultieIndex==index)? 'speech-bubble' : ''" @click="activeFacultie(index)">
 							<div class="img">
 								<img :src="'./img/' + facultie.img + '.png'" alt="Facultie icon"
-									:class="(facultieIndex==0)? 'filter' : ''">
+									:class="(facultieIndex==index)? 'filter' : ''">
 							</div>
 							<div class="pb-4">{{facultie.facultie}}</div>
-
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<!-- Third Section Law Faculty-->
-			<section class="section-courses">
+			<section class="section-courses mb-5">
 				<div class="courses-law container d-flex align-items-center">
 					<div class="image-side">
 						<img src="./img/Gavel-Illustration-e1556884768193.png" alt="Illustration Law">
@@ -186,7 +185,7 @@
 								</li>
 							</ul>
 						</div>
-						<button class="courses-btn mt-5" type="button">View All Events</button>
+						<button class="courses-btn mt-5 view-all" type="button">View All Events</button>
 					</section>
 				</section>
 			</div>
@@ -344,7 +343,7 @@
 					</div>
 					<div class="circle-container d-flex flex-column justify-content-end pe-5 align-items-end">
 
-						<div class="circle-go-top d-flex align-items-center justify-content-center mt-3">
+						<div class="circle-go-top d-flex align-items-center justify-content-center mt-3 mb-4">
 							<img src="./img/back-to-top-arrow.svg" alt="">
 						</div>
 					</div>

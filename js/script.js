@@ -250,6 +250,13 @@ const app = Vue.createApp({
             return lastItem;
         }
     },
+    methods: {
+
+        activeFacultie(index) {
+            this.facultieIndex = index
+
+        },
+    },
 
 
 

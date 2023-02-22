@@ -160,6 +160,7 @@ button {
 .jumbotron-edu p {
     font-size: 1.3rem;
     font-weight: 300;
+    width: 80%;
 }
 
 /* First Section ***********************************/
@@ -287,9 +288,10 @@ h2 {
 }
 
 .faculties-title p {
-    width: 24%;
+    width: 30%;
     text-align: center;
     color: var(--medium-petrol-grey-text);
+    font-size: 1.2rem;
 }
 
 .faculties-title h2 {
@@ -354,7 +356,7 @@ h2 {
 
 /* DIAGRAM **************************************** */
 .key-times p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-top: 1.5rem;
     font-weight: 300;
     color: var(--light-white-txt);
@@ -417,6 +419,7 @@ h2 {
 
 .key-times h5 {
     padding-bottom: 0;
+    font-size: 1.3rem;
 }
 
 /* EVENTS ***********************************/

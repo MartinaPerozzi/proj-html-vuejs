@@ -114,13 +114,13 @@
 			</section>
 
 			<!-- Third Section Law Faculty-->
-			<section class="section-courses mb-5">
-				<div class="courses-law container d-flex align-items-center">
+			<section class="section-courses mb-5" v-for="facultie, index in faculties">
+				<div class="courses-law container d-flex align-items-center" v-if="facultieIndex==index">
 					<div class="image-side">
-						<img src="./img/Gavel-Illustration-e1556884768193.png" alt="Illustration Law">
+						<img :src="'./img/' + facultie.imgSection" alt="Illustration Law">
 					</div>
 					<div class="text-side">
-						<h3>Law Faculty</h3>
+						<h3>{{facultie.facultie}}</h3>
 						<p>Learning from world-leading academics and pratictioners, you'll not only receive an
 							outstanding grounding in the theory of law, but you will be able to understand how those
 							principles are applied in pratice trough a range of student-led activities and competitions.
@@ -338,6 +338,7 @@
 										<div>{{categorie.categorie}}</div>
 									</div>
 								</div>
+								<div class="rights mt-4"> ModalTheme. All rights reserved.</div>
 							</section>
 						</div>
 					</div>

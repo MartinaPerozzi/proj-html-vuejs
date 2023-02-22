@@ -46,22 +46,27 @@ const app = Vue.createApp({
                 {
                     img: "Gavel-v2",
                     facultie: "Law Faculty",
+                    imgSection: "Law.png"
                 },
                 {
                     img: "Coins-tabs-v2",
                     facultie: "Economy",
+                    imgSection: "Economy.png"
                 },
                 {
                     img: "Medicine-tabs-v2",
                     facultie: "Medicine",
+                    imgSection: "Medicine.png"
                 },
                 {
                     img: "Computer-tabs-v2",
                     facultie: "Computer Science",
+                    imgSection: "Computer-Science.png"
                 },
                 {
                     img: "Palette-tabs-v2",
                     facultie: "Graphic Design",
+                    imgSection: "Graphic-Design.png"
                 }
 
             ],

@@ -273,6 +273,7 @@ const app = Vue.createApp({
     },
 
     computed: {
+        // The last element of the navbar should be a button
         lastNavLink() {
             let lastItem = this.headerNavbar.navItems.length - 1;
             console.log(lastItem);
@@ -280,13 +281,12 @@ const app = Vue.createApp({
         }
     },
     methods: {
-
+        // Faculty carousel
         activeFacultie(index) {
             this.facultieIndex = index
         },
 
     },
-
 
 
 });

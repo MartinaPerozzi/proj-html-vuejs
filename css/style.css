@@ -3,7 +3,7 @@
     max-width: 100vw;
 }
 
-/* HEADER */
+/* HEADER ****************************/
 header {
     color: white;
     background-color: var(--red-bg);
@@ -12,7 +12,7 @@ header {
     min-height: 700px;
 }
 
-/* Waves background ***********/
+/* Header wave background ***********/
 header::before {
     content: "";
     background-image: url(../img/theme_slider2_bg-1.jpg);
@@ -36,6 +36,7 @@ header::after {
     background-size: cover;
 }
 
+/* Nav-bar ************/
 .navbar-edu {
     padding: 1rem 2rem 0.5rem 3rem;
 }
@@ -44,7 +45,6 @@ header::after {
     max-width: 250px;
 }
 
-/* Nav-bar ************/
 header ul {
     margin: 0;
 }
@@ -143,6 +143,7 @@ button {
     padding: 1rem 0rem;
 }
 
+/* Jumbotron main */
 .jumbotron-content {
     width: 55%;
     text-align: center;
@@ -169,7 +170,7 @@ button {
     width: 80%;
 }
 
-/* First Section ***********************************/
+/* First Section Courses *******************************/
 .section-courses.first {
     background-image: url(../img/home-background.png);
     color: var(--petrol-grey-bg);
@@ -236,7 +237,7 @@ h2 {
     margin-bottom: -9px;
 }
 
-/* Second Section *******************************/
+/* Second Section Faculties ***********************/
 .speech-bubble {
     background-color: var(--red-bg);
     position: absolute;
@@ -307,7 +308,7 @@ h2 {
     padding-bottom: 1rem;
 }
 
-/* Third Section Law Faculty ****************************/
+/* Third Section Faculty Section *******************/
 .courses-law {
     line-height: 2rem;
     margin-top: 5rem;
@@ -328,14 +329,14 @@ h2 {
     background-color: var(--red-bg);
 }
 
-/* Diagram University Year Section ************/
+/* Section Diagram / Events ******************/
 .university-year {
     position: relative;
     padding-top: 101px;
     width: 100%;
 }
 
-/* Wave background ****************************/
+/* Waves background ****************************/
 .university-year::before {
     content: "";
     background-image: url(../svg/svg-0.svg);
@@ -410,7 +411,6 @@ h2 {
 
 .bottom-keys .box-day {
     margin-right: 0rem;
-    /* margin-left: 3rem; */
 }
 
 .bottom-keys {
@@ -461,7 +461,7 @@ h2 {
     min-width: 300px;
 }
 
-/* Latest courses ******************************/
+/* Section Latest Courses ******************************/
 .latest-courses {
     margin-top: 6rem;
 }
@@ -501,11 +501,10 @@ h2 {
     gap: 1rem;
 }
 
-/* Examination *****************************/
+/* Sections Illustration/Text *****************************/
 .examination {
     margin-top: 3rem;
 }
-
 
 .examination .courses-btn {
     background-color: var(--red-bg);
@@ -558,6 +557,7 @@ h2 {
     left: 86%;
 }
 
+/* Section Partner ***************************/
 .partner-container {
     background: linear-gradient(180deg, var(--white-bg) 50%, var(--light-white-bg) 15%);
 }

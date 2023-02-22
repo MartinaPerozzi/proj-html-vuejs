@@ -37,7 +37,7 @@ header::after {
 }
 
 .navbar-edu {
-    padding: 1rem 1rem 0.5rem 2rem;
+    padding: 1rem 2rem 0.5rem 3rem;
 }
 
 .logo-img img {
@@ -281,6 +281,7 @@ h2 {
 .facultie {
     border: 1px solid var(--light-grey-border);
     position: relative;
+    max-width: 240px;
 }
 
 .facultie .img {
@@ -331,7 +332,8 @@ h2 {
 /* Diagram University Year Section ************/
 .university-year {
     position: relative;
-    padding-top: 80px;
+    padding-top: 101px;
+    width: 100%;
 }
 
 /* Wave background ****************************/
@@ -339,10 +341,10 @@ h2 {
     content: "";
     background-image: url(../svg/svg-0.svg);
     position: absolute;
-    height: 89px;
+    height: 6%;
     width: 100%;
-    top: -7px;
-    background-size: 100%, 100%;
+    top: 0px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -538,7 +540,7 @@ h2 {
 }
 
 .subscrive .circle-icon {
-    left: 87%;
+    left: 86%;
 }
 
 .partner-container {
@@ -591,7 +593,7 @@ footer {
 
 .buttons-footer {
     gap: 1rem;
-    flex-basis: 25%;
+    flex-basis: 20%;
     padding: 2rem 1rem;
 }
 
@@ -646,7 +648,7 @@ footer {
 .nav-link ul {
     flex-basis: 20%;
     font-weight: 300;
-    margin: 0;
+    padding-left: 0;
 }
 
 .nav-link .links {
@@ -665,7 +667,6 @@ footer input {
 
 .search {
     flex-basis: 40%;
-    padding-left: 2rem;
     text-align: right;
 }
 
@@ -685,7 +686,7 @@ footer input {
     clip-path: circle(50% at 50% 50%);
     position: absolute;
     top: 0px;
-    left: 87%;
+    left: 85%;
     color: var(--white-bg);
 }
 
@@ -723,6 +724,7 @@ footer h5 {
 .circle-container {
     flex-basis: 20%;
     cursor: pointer;
+    padding: 2rem 2rem 0rem 0rem;
 }
 
 /* HOVER EFFECTS ************************************/

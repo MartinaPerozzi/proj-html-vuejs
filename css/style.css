@@ -749,7 +749,7 @@ footer h5 {
     background-color: var(--light-red-bg);
 }
 
-.first button:hover {
+.first .hover-red:hover {
     background-color: var(--light-red-bg);
 }
 

@@ -462,9 +462,6 @@ h2 {
     min-width: 300px;
 }
 
-.card-event p {
-    text-overflow: ellipsis
-}
 
 /* Latest courses ******************************/
 .latest-courses {

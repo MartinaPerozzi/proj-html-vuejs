@@ -545,11 +545,19 @@ h2 {
     background: linear-gradient(180deg, var(--white-bg) 50%, var(--light-white-bg) 15%);
 }
 
-.partner-logos {
-    gap: 2rem;
-    padding: 1rem 6rem 7rem 6rem;
+.partner-bg {
     background-image: url(../img/background-wave3.png);
-    flex-basis: 10%;
+}
+
+.partner-logos {
+    gap: 1rem;
+    padding: 1rem 6rem 7rem 6rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.partner-logos>div:first-child {
+    padding-top: 1rem;
 }
 
 .partner-logos img {
@@ -574,6 +582,7 @@ h2 {
 footer {
     background-color: var(--red-bg);
     color: var(--light-white-txt);
+    min-height: 440px;
 }
 
 .footer-main {

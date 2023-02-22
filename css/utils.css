@@ -53,12 +53,16 @@
 	--box-shadow-btn:
 		5.3px 7.9px 6.6px rgba(0, 0, 0, 0.51),
 		14px 21px 26px rgba(0, 0, 0, 0.151);
+	--box-shadow-btn-light:
+		0px 5.3px 2.8px rgba(0, 0, 0, 0.11),
+		0px 14px 11px rgba(0, 0, 0, 0.033);
 }
 
 body {
 	font-family: 'Fredoka', sans-serif;
 }
 
+/* Containers */
 .container-edu {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -69,6 +73,7 @@ body {
 	margin: 0 auto;
 }
 
+/* Reset elements */
 ul {
 	list-style: none;
 	margin-left: 0px;

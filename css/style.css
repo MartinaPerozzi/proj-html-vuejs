@@ -1,9 +1,9 @@
-/* HEADER */
 #app {
     width: 99vw;
     max-width: 100vw;
 }
 
+/* HEADER */
 header {
     color: white;
     background-color: var(--red-bg);
@@ -150,7 +150,6 @@ button {
     padding-top: 4.8rem;
     font-size: 1.1rem;
     line-height: 2.2rem;
-    font-weight: lighter;
 }
 
 .jumbotron-btn {
@@ -182,7 +181,7 @@ button {
 
 .courses {
     gap: 3rem;
-    padding-top: 6rem;
+    padding-top: 7rem;
 }
 
 .section-courses .text-side>img {
@@ -214,7 +213,7 @@ h2 {
     max-width: 200px;
     font-size: 0.8rem;
     text-align: center;
-    top: -28px;
+    top: -20px;
     border-radius: 0.2rem;
     padding: 0.1rem 0.5rem;
 }
@@ -252,15 +251,16 @@ h2 {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 47%;
     width: 0;
     height: 0;
-    border: 20px solid transparent;
+    border: 26px solid transparent;
     border-top-color: var(--red-bg);
     border-bottom: 0;
     border-left: 0;
-    margin-left: -10px;
-    margin-bottom: -20px;
+    margin-left: -4px;
+    margin-bottom: -11px;
+    transform: rotate(-137deg);
 }
 
 .faculties-row {
@@ -468,7 +468,7 @@ h2 {
 
 /* Latest courses ******************************/
 .latest-courses {
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 
 .latest-courses-row {
@@ -497,17 +497,37 @@ h2 {
     padding: 1rem 1.5rem;
 }
 
+.card-latest-courses p,
+.card-latest-courses span {
+    color: var(--light-grey-txt);
+}
+
 .latest-courses-row {
     gap: 1rem;
 }
 
 /* Examination *****************************/
 .examination {
-    margin-top: 9rem;
+    margin-top: 3rem;
 }
+
 
 .examination .courses-btn {
     background-color: var(--red-bg);
+}
+
+.examination p {
+    width: 80%;
+    color: var(--medium-petrol-grey-text);
+    font-size: 1.1rem;
+}
+
+.ex-less-m {
+    margin-top: 1rem;
+}
+
+.ex-less-m .courses {
+    gap: 4rem;
 }
 
 /* Subscribe Section ***********************/
@@ -515,6 +535,7 @@ h2 {
     color: var(--light-white-bg);
     font-weight: 500;
     font-size: 2rem;
+    margin: 0px;
 }
 
 .subscrive {
